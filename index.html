@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="St">
+    <title>StuntingCare</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/intro" rel="stylesheet">
+                
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: oklch(95% 0.0 280);
+        }
+
+
+        .overlay-circle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #dc1431;
+
+            transform: scale(300%) translateX(0%);
+            border-radius: 50%;
+            /* filter: blur(40px); */
+            top: 0;
+            right: 0;
+        }
+
+        .overlay-circle2 {
+            position: absolute;
+            top: 35%;
+            left: 40%;
+            height: 100px;
+            width: 100px;
+
+            transform: scale(-20%);
+        }
+
+        .overlay-wave {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+
+            transform: translateY(20%);
+        }
+
+        header {
+            position: relative;
+        }
+
+        .nav-extra {
+            display: flex;
+            justify-content: end;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <nav class="navbar">
+            <div class="nav-brand">
+               <i><img src="./assets/images/logo.png" style="width: 50px; height: 50px;" alt=""> </i>
+                    
+                <h2 style="margin: 0; margin-left: .5rem;">
+                    StuntingCare
+                </h2>
+            </div>
+            <ul class="nav-items">
+                <a href="/">
+                    <li>Beranda</li>
+                </a>
+                <a href="">
+                    <li>Tentang</li>
+                </a>
+                <a href="">
+                    <li>
+                        Edukasi
+                    </li>
+                </a>
+                <a href="">
+
+                </a>
+            </ul>
+            <div class="nav-extra nav-conf">
+                <div class="vendor-sign">
+                    <a href="/login.html">Sign In</a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="hero-overlay">
+            <svg class="overlay-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#dc1431" fill-opacity="1" d="M0,256L26.7,218.7C53.3,181,107,107,160,74.7C213.3,43,267,53,320,74.7C373.3,96,427,128,480,128C533.3,128,587,96,640,117.3C693.3,139,747,213,800,229.3C853.3,245,907,203,960,202.7C1013.3,203,1067,245,1120,250.7C1173.3,256,1227,224,1280,218.7C1333.3,213,1387,235,1413,245.3L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+            </svg>
+
+            <svg class="overlay-circle2" xmlns="http://www.w3.org/2000/svg" fill="#DC1431" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M528 320C528 205.1 434.9 112 320 112C205.1 112 112 205.1 112 320C112 434.9 205.1 528 320 528C434.9 528 528 434.9 528 320zM64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320z"/></svg>
+            <div class="overlay-circle"></div>
+            <img src="./assets/icons/Picture1.svg" style="z-index: 0;" alt="">
+        </div>
+        <div class="hero-content">
+            <div>
+                <img 
+                    style="border-radius: 50%; aspect-ratio: 1 / 1; width: 30vw; height: auto; z-index: -2;" 
+                    src="./assets/images/children-playing-grass_1098-504.jpg"
+
+                     alt="">
+            </div>
+            <div class="w-full" style="flex-basis: 40%;">
+                <h1 style="font-size: 40px; font-weight: 700; font-family: 'Intro', sans-serif;">
+                    <span>Dukung Tumbuhnya</span>
+                    <br>
+                    <span>Wujudkan impiannya</span>
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptate perspiciatis soluta eveniet eum, dolore nihil iste labore similique obcaecati corporis vel fugiat, debitis a aliquid molestias nemo excepturi optio!
+                </p>
+                
+                <a href="#" class="button button-sm button-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

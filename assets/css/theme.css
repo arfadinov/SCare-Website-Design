@@ -1,0 +1,30 @@
+:root {
+    --bg-dark: oklch(85% 0.005 280);
+    --bg: oklch(90% 0.005 280);
+    --bg-light: oklch(95% 0.0 280);
+
+
+    --text: oklch(5% 0.005 0);
+    --text-muted: oklch(30% 0.005 0);
+    /* --navbar-background-color: oklch(57% 0.25 20); */
+    --navbar-background-color: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* :root {
+        --foreground-color: oklch(100% 0 0);
+        --background-color: oklch(0% 0 0);
+    } */
+}
+
+.bg-crimson {
+    background-color: #DC1431;
+}
+
+.text-link {
+    color: hsl(240, 100%, 20%);
+}
+
+.text-muted {
+    color: var(--text-muted)
+}
