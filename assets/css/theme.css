@@ -28,3 +28,7 @@
 .text-muted {
     color: var(--text-muted)
 }
+
+.text-white {
+    color: oklch(95% 0 0);
+}

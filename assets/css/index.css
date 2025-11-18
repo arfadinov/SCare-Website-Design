@@ -13,6 +13,11 @@
         padding: 0;
         position: relative;
         overflow-x: hidden;
+        max-width: 100vw;
+
+        word-break: keep-all;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
         
         font-size: 16px;
         font-family: 'Roboto', Tahoma, Verdana, sans-serif;
@@ -42,6 +47,19 @@
         object-fit: cover;
         height: 100%;
         width: auto;
+    }
+
+    footer {
+        width: 100%;
+        min-height: max-content;
+        background-color: oklch(30% 0 0);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        gap: 1rem;
     }
 }
 
@@ -82,5 +100,18 @@
 
     .text-center {
         text-align: center;
+    }
+
+    .mobile-hidden {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
